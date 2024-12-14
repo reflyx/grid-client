@@ -1,5 +1,5 @@
 {
-  "name": "grid-client",
+  "name": "@reflyx/grid-client",
   "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -11,7 +11,7 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "description": "",
+  "description": "Reflyx low-level grid access library used by the operating system",
   "scripts": {
     "dev": "bun --watch src/index.ts",
     "start": "bun src/index.ts",
@@ -22,13 +22,13 @@
   "files": ["dist"],
   "keywords": ["bun"],
   "license": "MIT",
-  "homepage": "https://github.com/maxam2017/bun-lib-starter#readme",
+  "homepage": "https://github.com/reflyx/grid-client#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxam2017/bun-lib-starter.git"
+    "url": "git+https://github.com/reflyx/grid-client.git"
   },
-  "bugs": "https://github.com/maxam2017/bun-lib-starter/issues",
-  "author": "maxam2017 <whk0313@gmail.com>",
+  "bugs": "https://github.com/reflyx/grid-client/issues",
+  "author": "joelg <joelg@reflyx.com>",
   "devDependencies": {
     "@biomejs/biome": "1.4.1",
     "@types/bun": "latest",
@@ -37,7 +37,13 @@
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },
+  "peerDependencies":  {
+    "mqtt": "^5.10.3"
+  },
   "release": {
     "branches": ["main"]
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1"
   }
 }
