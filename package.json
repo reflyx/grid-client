@@ -30,7 +30,6 @@
   "bugs": "https://github.com/reflyx/grid-client/issues",
   "author": "joelg <joelg@reflyx.com>",
   "devDependencies": {
-    "@biomejs/biome": "1.4.1",
     "@types/bun": "latest",
     "dts-bundle-generator": "^9.2.1",
     "semantic-release": "^22.0.12",
